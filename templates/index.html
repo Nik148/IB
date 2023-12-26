@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Система корпоративного управления РГУ нефти и газа (НИУ) имени И.М. Губкина</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href={{ url_for("static", filename="css/style.css") }}>
+    <link rel="shortcut icon" href={{ url_for("static", filename="assets/favicon.ico") }}/>
+    <link rel="stylesheet" type="text/css" href={{ url_for("static", filename="index.css") }}/>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="top-menu">
+        <div id="account">
+          <ul>
+            <li><a class="login" href="/login">Войти</a></li>
+            <li><a class="register" href="/login">Регистрация</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="header">
+        <a href="#" class="mobile-toggle-button js-flyout-menu-toggle-button"></a>
+
+        <h1>Система корпоративного управления РГУ нефти и газа (НИУ) имени И.М. Губкина</h1>
+      </div>
+
+      <div id="main" class="nosidebar">
+        <div id="sidebar"></div>
+
+        <div id="content">
+          <div id="login-form">
+            <form
+              action="/login"
+              accept-charset="UTF-8"
+              name="form-df5338ac"
+              method="post"
+            >
+
+              <label for="username">Пользователь</label>
+              <input type="text" name="username" id="username" tabindex="1" />
+
+              <label for="password">
+                Пароль
+                <a class="lost_password" href="/account/lost_password">Восстановление пароля</a>
+              </label>
+              <input type="password" name="password" id="password" tabindex="2" />
+
+              <label for="autologin"
+                ><input type="checkbox" name="autologin" id="autologin" value="1" tabindex="4" />
+                Оставаться в системе</label
+              >
+
+              <input type="submit" name="login" value="Вход" tabindex="5" id="login-submit" />
+            </form>
+          </div>
+          <div style="clear: both"></div>
+        </div>
+      </div>
+      <div id="footer">
+        Powered by <a href="https://www.redmine.org/">Redmine</a> &copy; 2006-2023 Jean-Philippe
+        Lang
+      </div>
+
+      <div id="ajax-indicator" style="display: none"><span>Загрузка...</span></div>
+      <div id="ajax-modal" style="display: none"></div>
+    </div>
+  </body>
+</html>

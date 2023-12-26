@@ -1,0 +1,235 @@
+body { 
+	font-family: "Lucida Grande", verdana, arial, helvetica, sans-serif;
+	font-size: 13px;
+  margin: 0;
+  padding: 0;
+  min-width: 900px;
+  min-height: 100vh;
+}
+
+#wrapper {
+  background: #f3f3f3;
+  min-height: inherit;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+#top-menu {
+  background-color: #252525;
+  color: #ccc;
+  padding: 7px 10px 7px 20px;
+  font-size: 0.8em;
+}
+
+#account {
+  float: right;
+}
+
+#top-menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+#top-menu li {
+  float: left;
+  list-style-type: none;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  white-space: nowrap;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+#top-menu a {
+  color: #e0e0e0;
+  margin-right: 8px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#header {
+  background: #394956;
+  min-height: 5em;
+  padding: 0px;
+  min-height: initial;
+}
+
+#header a {
+  color: #f8f8f8;
+}
+
+.mobile-toggle-button, .flyout-menu {
+  display: none;
+}
+
+#header h1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#header > h1 {
+  background: url(/static/assets/logo.png) no-repeat 15px 45%;
+  color: #E0E0E0;
+  text-shadow: 0 -2px rgba(0, 0, 0, 0.2);
+  font-size: 22px;
+  padding: 18px 10px 18px 70px;
+  margin: 0px;
+}
+
+#main {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: row-reverse;
+  background: transparent;
+  margin: 25px 25px 0px 25px;
+}
+
+body.action-login #content, body.action-login #main.nosidebar #content {
+  background: inherit;
+  border: 0px;
+  box-shadow: none;
+}
+
+div#main.nosidebar div#content {
+  margin-right: 0px;
+}
+
+#content {
+  flex-grow: 1;
+  margin: 0px;
+  padding: 10px 16px 10px 16px;
+  overflow-x: auto;
+}
+
+#login-form {
+  padding: 20px;
+  background: white;
+  -webkit-box-shadow: 0 0px 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 3px #CCC;
+  -moz-box-shadow: 0 0 3px #CCC;
+  box-shadow: 0 0 3px #CCC;
+  border: 1px solid #D7D7D7;
+  width: 500px;
+  margin: 40px auto;
+}
+
+form {
+  display: inline;
+  margin-top: 0em;
+}
+
+#login-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#login-form a.lost_password {
+  float: right;
+  font-weight: normal;
+}
+
+a, a:link, a:visited {
+  color: #269;
+  text-decoration: none;
+}
+
+#login-form label[for=autologin] {
+  font-weight: normal;
+}
+
+#login-form input#username, #login-form input#password {
+  outline: none;
+  margin: 0px;
+  border: 1px solid #DDD;
+  padding: 6px;
+  font-size: 140%;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+
+#login-form input[type=text], #login-form input[type=password], #login-form input[type=submit] {
+  display: block;
+  width: 100%;
+}
+
+#login-form input {
+  height: 29px;
+}
+
+input, select, textarea, button {
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+input[type="checkbox" i] {
+  background-color: initial;
+  cursor: default;
+  appearance: auto;
+  box-sizing: border-box;
+  margin: 3px 3px 3px 4px;
+  padding: initial;
+  border: initial;
+}
+
+input, select, button {
+  vertical-align: middle;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  height: 24px;
+  padding: 0 7px;
+}
+
+#login-form input#login-submit {
+  padding: 1px;
+}
+
+#login-form input[type=text], #login-form input[type=password], #login-form input[type=submit] {
+  display: block;
+  width: 100%;
+}
+
+#ajax-modal p.buttons input[type="submit"], .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-close, input[type="submit"] {
+  background: #62a5c4;
+  line-height: 30px;
+  font-weight: 500;
+  text-align: center;
+  border-color: transparent;
+  color: #fff;
+  -moz-box-shadow: 0 3px 0px #558aa2;
+  -webkit-box-shadow: 0 3px 0px #558aa2;
+  box-shadow: 0 3px 0px #558aa2;
+}
+
+#footer {
+  margin: 10px;
+} 
+
+#footer {
+  background-color: #f3f3f3;
+  border: 0px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #aaa;  
+  padding: 5px;
+}
+
